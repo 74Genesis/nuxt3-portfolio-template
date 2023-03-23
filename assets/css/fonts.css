@@ -1,0 +1,56 @@
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-Thin.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-ExtraLight.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-Light.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-Medium.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-Bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('@/assets/fonts/Sora-ExtraBold.ttf') format('truetype');
+  }
