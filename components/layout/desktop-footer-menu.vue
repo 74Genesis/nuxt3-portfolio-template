@@ -24,14 +24,15 @@ onMounted(() => {});
         :key="item.href"
         ref="menuitem"
         role="none"
-        class="menuitem relative my-1"
+        class="menuitem relative"
       >
         <a
           role="menuitem"
-          class="ontline-basic block px-8 py-9 hover:text-white-font"
+          class="ontline-basic block px-8 py-7 hover:text-white-font"
           :href="item.href"
           tabindex="0"
           title="Home"
+          :aria-label="'Menu item: ' + item.title"
           aria-current="page"
         >
           {{ item.title }}
@@ -55,10 +56,7 @@ onMounted(() => {});
 }
 .menuitem:hover {
   &::after {
-    width: calc(100% - 3.7em);
+    width: calc(100% - 4em);
   }
-}
-.menuitem:last-child {
-  @apply -mr-5;
 }
 </style>

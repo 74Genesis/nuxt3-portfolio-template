@@ -1,3 +1,5 @@
+import svgLoader from 'vite-svg-loader'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
@@ -9,6 +11,11 @@ export default defineNuxtConfig({
     },
   },
   css: ['@/assets/css/fonts.css', '@/assets/css/common.scss'],
+  vite: {
+    plugins: [
+      svgLoader()
+    ]
+  }
   // plugins: [
   //   { src: "https://esm.sh/webtorrent", mode: "client" }, // only on client side
   // ],

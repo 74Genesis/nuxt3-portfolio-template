@@ -1,3 +1,13 @@
 body {
     font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    @apply text-gray-font;
+}
+
+.ontline-basic {
+    @apply outline-2 outline-link-green-active;
+}
+
+.section-basic {
+    @apply mx-auto flex w-full max-w-6xl flex-col justify-center px-5;
 }

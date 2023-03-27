@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { definePageMeta } from "#imports";
-// import { NuxtLayout } from "#nuxt";
 definePageMeta({
   layout: false,
 });
@@ -11,7 +10,9 @@ definePageMeta({
       <template #header>
         <LayoutHeader />
       </template>
-      <template #default> 123123123 </template>
+      <template #default>
+        <SectionHome />
+      </template>
       <template #footer>
         <LayoutFooter />
       </template>
