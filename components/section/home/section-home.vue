@@ -4,15 +4,15 @@
 
 <template>
   <section class="section-basic">
-    <h1 class="welcome-text mt-24 text-[3.2em] font-semibold tracking-wide">
-      Hi Im Naufaldi, a special human <br />
-      with some ability to love learning and working on teamwork.
+    <h1 class="welcome-text mt-24 text-[3em] font-semibold tracking-wide">
+      Hi, Im a Software Developer, a special human with some ability to love
+      learning and working on teamwork.
     </h1>
-    <div class="mt-20 flex">
-      <SectionHomeAbout />
+    <div class="mt-20 flex gap-20">
+      <SectionHomeAbout class="max-w-2xl" />
       <SectionHomeContacts />
     </div>
-    <div class="mt-20 flex">
+    <div class="mt-20 flex gap-20">
       <SectionHomeExperience />
       <SectionHomeServices />
     </div>

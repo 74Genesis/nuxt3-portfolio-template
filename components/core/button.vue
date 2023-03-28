@@ -32,6 +32,7 @@ function root() {
   <component
     :is="root()"
     :href="href"
+    class="ontline-basic outline-offset-4"
     :class="['type-' + type, 'color-' + color]"
   >
     <slot />

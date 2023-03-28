@@ -7,8 +7,8 @@ import LinkedinIcon from "~/assets/icons/linkedin.svg?component";
 
 <template>
   <div>
-    <h3>Lets connect</h3>
-    <ul class="mt-1 mb-5 flex gap-2">
+    <h3 class="mt-2 text-3xl">Lets connect</h3>
+    <ul class="mt-6 mb-5 flex gap-2">
       <li>
         <a
           href="#"
