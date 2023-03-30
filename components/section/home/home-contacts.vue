@@ -8,30 +8,21 @@ import LinkedinIcon from "~/assets/icons/linkedin.svg?component";
 <template>
   <div>
     <h3 class="mt-2 text-3xl">Lets connect</h3>
-    <ul class="mt-6 mb-5 flex gap-2">
+    <ul class="my-5 flex gap-2">
       <li>
-        <a
-          href="#"
-          class="ontline-basic block rounded-md border border-transparent p-2 hover:border-white/80"
-        >
-          <TwitterIcon
-        /></a>
+        <CoreButton type="icon" size="sm" href="#">
+          <TwitterIcon class="block h-6 w-6" />
+        </CoreButton>
       </li>
       <li>
-        <a
-          href="#"
-          class="ontline-basic block rounded-md border border-transparent p-2 hover:border-white/80"
-        >
-          <GithubIcon
-        /></a>
+        <CoreButton type="icon" size="sm" href="#">
+          <GithubIcon class="block h-6 w-6" />
+        </CoreButton>
       </li>
       <li>
-        <a
-          href="#"
-          class="ontline-basic block rounded-md border border-transparent p-2 hover:border-white/80"
-        >
-          <LinkedinIcon
-        /></a>
+        <CoreButton type="icon" size="sm" href="#">
+          <LinkedinIcon class="m-0.5 block h-5 w-5" />
+        </CoreButton>
       </li>
     </ul>
   </div>

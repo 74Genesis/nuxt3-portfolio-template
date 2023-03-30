@@ -20,7 +20,7 @@ useHeadSafe({
         <slot />
       </div>
     </main>
-    <footer id="footer" class="section-basic">
+    <footer id="footer" class="section-basic overflow-hidden">
       <slot name="footer" />
     </footer>
   </div>

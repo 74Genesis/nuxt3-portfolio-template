@@ -12,9 +12,12 @@ definePageMeta({
       </template>
       <template #default>
         <SectionHome />
+        <SectionProjects />
+        <SectionSnippets />
+        <SectionMentorship class="mt-16" />
       </template>
       <template #footer>
-        <LayoutFooter />
+        <LayoutFooter class="mt-24" />
       </template>
     </NuxtLayout>
   </div>

@@ -11,14 +11,23 @@ const props = defineProps({
     default: "blue",
     validator: (val) => ["blue", "green"].includes(String(val)),
   },
+  size: {
+    type: String,
+    default: "md",
+    validator: (val) => ["sm", "md"].includes(String(val)),
+  },
   href: {
     type: String,
     default: undefined,
   },
+  label: {
+    type: String,
+    default: "",
+  },
 });
 
 function root() {
-  if (props.type === "link") {
+  if (["link", "icon"].includes(props.type)) {
     return "a";
   }
   if (props.type === "button") {
@@ -32,10 +41,16 @@ function root() {
   <component
     :is="root()"
     :href="href"
-    class="ontline-basic outline-offset-4"
-    :class="['type-' + type, 'color-' + color]"
+    :aria-label="label"
+    class="ontline-basic inline-flex items-center outline-offset-4"
+    :class="['type-' + type, 'color-' + color, 'size-' + size]"
   >
-    <slot />
+    <div v-if="$slots.iconBefore">
+      <slot name="iconBefore" />
+    </div>
+    <span>
+      <slot />
+    </span>
   </component>
 </template>
 
@@ -44,6 +59,27 @@ function root() {
   @apply underline underline-offset-2;
   &:hover {
     @apply no-underline;
+  }
+}
+.type-button {
+  @apply px-3 py-2 rounded-md bg-gray-dark-blue text-sm font-extralight border-2 border-transparent;
+  &:hover {
+    @apply border-2 cursor-pointer border-white;
+  }
+  &:active {
+    @apply scale-95;
+  }
+}
+.type-icon {
+  @apply p-3 rounded-md border border-transparent;
+  &.size-sm {
+    @apply p-2;
+  }
+  &:hover {
+    @apply border cursor-pointer border-white;
+  }
+  &:active {
+    @apply scale-95;
   }
 }
 

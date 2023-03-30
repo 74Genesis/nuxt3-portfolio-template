@@ -22,17 +22,17 @@ const list = [
 
 <template>
   <div class="flex items-center gap-7">
-    <ul class="flex gap-10 text-center text-sm font-light text-dark-font">
+    <ul class="flex gap-7 text-center text-sm font-light text-dark-font">
       <li
         v-for="item in list"
         :key="item.title"
-        class="relative rounded-lg bg-gray-dark-blue p-3 pt-16"
+        class="relative w-64 rounded-lg bg-gray-dark-blue p-3 pt-16"
       >
         <div
-          class="absolute left-1/2 top-0 h-14 w-14 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-green to-blue"
+          class="absolute left-1/2 top-0 flex h-[5em] w-[5em] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-green to-blue"
         >
           <div
-            class="flex h-full w-full items-center justify-center rounded-full bg-gray-dark-blue p-2"
+            class="flex h-[4.8em] w-[4.8em] items-center justify-center rounded-full bg-gray-dark-blue p-2"
           >
             <component
               :is="item.icon"
@@ -41,8 +41,10 @@ const list = [
             />
           </div>
         </div>
-        <h5 class="text-lx font-normal text-gray-font">{{ item.title }}</h5>
-        <p class="mt-5">
+        <h5 class="text-base font-normal tracking-wide text-gray-font">
+          {{ item.title }}
+        </h5>
+        <p class="mt-3 font-extralight leading-6 text-dark-font/60">
           {{ item.text }}
         </p>
       </li>
