@@ -6,7 +6,7 @@ import LinkedinIcon from "~/assets/icons/linkedin.svg?component";
 </script>
 
 <template>
-  <div>
+  <div class="flex-col items-center text-center md:text-left">
     <h3 class="mt-2 text-3xl">Lets connect</h3>
     <ul class="my-5 flex gap-2">
       <li>

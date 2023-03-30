@@ -11,9 +11,6 @@ onMounted(() => {});
 
 <template>
   <div class="relative flex justify-center">
-    <hr
-      class="absolute top-0 left-1/2 h-[1px] w-screen -translate-x-1/2 border-white/20"
-    />
     <div class="flex flex-col items-center text-sm font-light">
       <LayoutDesktopFooterMenu class="mt-10" />
       <p class="mt-5">Reach me out</p>

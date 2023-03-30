@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="section-basic mt-28">
+  <section class="section-basic">
     <h1 class="text-4xl font-medium">Featured Project</h1>
     <SectionProjectsList class="mt-12" />
   </section>

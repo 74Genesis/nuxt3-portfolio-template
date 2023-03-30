@@ -20,8 +20,11 @@ useHeadSafe({
         <slot />
       </div>
     </main>
-    <footer id="footer" class="section-basic overflow-hidden">
-      <slot name="footer" />
+    <footer id="footer" class="relative">
+      <hr class="absolute top-0 left-0 h-[1px] w-full border-white/20" />
+      <div class="section-basic">
+        <slot name="footer" />
+      </div>
     </footer>
   </div>
 </template>

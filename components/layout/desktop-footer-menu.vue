@@ -7,9 +7,9 @@ const menuitem = ref<Element[]>([]);
 
 const menu = [
   { title: "Home", href: "#home" },
+  { title: "Projects", href: "#projects" },
+  { title: "Code snippets", href: "#code" },
   { title: "Mentorship", href: "#mentorship" },
-  { title: "Portfolio", href: "#portfolio" },
-  { title: "Stippet", href: "#snippet" },
   { title: "Blog", href: "#blog" },
 ];
 
