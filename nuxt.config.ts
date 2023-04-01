@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   ssr: false,
   app: {
+    baseUrl: '/nuxt3-portfolio-template/',
     head: {
       // script: [{ src: "/scripts/webtorrent.min.js" }],
       noscript: [{ children: "JavaScript is required" }],

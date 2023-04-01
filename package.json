@@ -6,7 +6,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "12.0.0",
@@ -37,6 +38,7 @@
     "@vime/vue-next": "^5.4.0",
     "@webtor/platform-sdk-js": "^0.2.18",
     "lint": "^0.8.19",
+    "push-dir": "^0.4.1",
     "sass": "^1.59.3",
     "webtorrent": "^2.0.14"
   }
