@@ -1,15 +1,18 @@
 
 <script lang="ts" setup>
 import { Bars3Icon } from "@heroicons/vue/20/solid";
+import { useRuntimeConfig } from "#imports";
+
+const config = useRuntimeConfig();
 const items = [
   {
-    img: "/projects/pr1.jpeg",
+    img: (config.app.baseURL || "/") + "projects/pr1.jpeg",
     category: "Web development",
     title: "Bolder Landingpage",
     text: "Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision.",
   },
   {
-    img: "/projects/pr2.jpeg",
+    img: (config.app.baseURL || "/") + "projects/pr2.jpeg",
     category: "Web development",
     title: "Kerja Mantul Education Management",
     text: "Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision.",

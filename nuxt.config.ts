@@ -4,10 +4,18 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
   ssr: false,
+  runtimeConfig: {
+    // public: {
+    //   baseURL: '/nuxt3-portfolio-template/',
+    // },
+    // app: {
+    //   baseURL: '/nuxt3-portfolio-template/',
+    // },
+  },
   app: {
     baseUrl: '/nuxt3-portfolio-template/',
+    buildAssetsDir: '/assets/',
     head: {
-      // script: [{ src: "/scripts/webtorrent.min.js" }],
       noscript: [{ children: "JavaScript is required" }],
     },
   },
@@ -20,7 +28,4 @@ export default defineNuxtConfig({
   router: {
     scrollBehavior: () => ({ x: 0, y: 0 }),
   },
-  // plugins: [
-  //   { src: "https://esm.sh/webtorrent", mode: "client" }, // only on client side
-  // ],
 });

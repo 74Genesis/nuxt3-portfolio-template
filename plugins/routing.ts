@@ -20,7 +20,8 @@ export default defineNuxtPlugin(nuxtApp => {
           function handleIntersection(entries: any) {
             entries.map((entry: any) => {
               if (entry.isIntersecting) {
-                intersectEntries.value.push(Routes.find((item: RouteItem) => item.id === entry.target.id))
+                const route: RouteItem | null = Routes.find((item: RouteItem) => item.id === entry.target.id) || null;
+                if (route) intersectEntries.value.push(route)
               } else {
                 intersectEntries.value = intersectEntries.value.filter((item: RouteItem) => item.id !== entry.target.id)
               }
