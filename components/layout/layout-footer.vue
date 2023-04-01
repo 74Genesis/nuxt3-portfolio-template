@@ -13,8 +13,8 @@ onMounted(() => {});
   <div class="relative flex justify-center">
     <div class="flex flex-col items-center text-sm font-light">
       <LayoutDesktopFooterMenu class="mt-10" />
-      <p class="mt-5">Reach me out</p>
-      <ul class="mt-2 mb-5 flex gap-2">
+      <p class="mt-10 md:mt-5">Reach me out:</p>
+      <ul class="mt-4 mb-5 flex gap-2 md:mt-2">
         <li>
           <CoreButton type="icon" size="sm" href="#">
             <TwitterIcon class="block h-6 w-6" />

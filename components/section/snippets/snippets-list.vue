@@ -36,19 +36,21 @@ const items = [
 
 <template>
   <div>
-    <div role="list" class="mb-10 grid grid-cols-2 gap-8">
+    <div role="list" class="mb-10 grid grid-cols-1 gap-8 md:grid-cols-2">
       <SectionSnippetsItem
         v-for="item in items"
         :key="item.title"
         :item="item"
       />
     </div>
-    <CoreButton type="button">
-      <template #iconBefore>
-        <Bars3Icon class="mr-2 h-4 w-4" />
-      </template>
-      <template #default> See more </template>
-    </CoreButton>
+    <div class="text-left">
+      <CoreButton type="button">
+        <template #iconBefore>
+          <Bars3Icon class="mr-2 h-4 w-4" />
+        </template>
+        <template #default> See more </template>
+      </CoreButton>
+    </div>
   </div>
 </template>
 

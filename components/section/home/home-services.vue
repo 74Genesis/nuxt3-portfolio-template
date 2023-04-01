@@ -22,11 +22,13 @@ const list = [
 
 <template>
   <div class="flex items-center gap-7">
-    <ul class="flex gap-7 text-center text-sm font-light text-dark-font">
+    <ul
+      class="flex flex-col gap-20 text-center text-sm font-light text-dark-font md:flex-row md:gap-7"
+    >
       <li
         v-for="item in list"
         :key="item.title"
-        class="relative w-64 rounded-lg bg-gray-dark-blue p-3 pt-16"
+        class="relative w-full rounded-lg bg-gray-dark-blue p-7 pt-16 md:w-64 md:p-3 md:pt-16"
       >
         <div
           class="absolute left-1/2 top-0 flex h-[5em] w-[5em] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-tr from-green to-blue"
@@ -49,9 +51,9 @@ const list = [
         </p>
       </li>
     </ul>
-    <CoreButton type="icon" class="shrink-0 grow-0 basis-16"
-      ><ArrowSmallRightIcon class="h-12 w-12"
-    /></CoreButton>
+    <CoreButton type="icon" class="hidden shrink-0 grow-0 basis-16 md:visible">
+      <ArrowSmallRightIcon class="h-12 w-12" />
+    </CoreButton>
   </div>
 </template>
 

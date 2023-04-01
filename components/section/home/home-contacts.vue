@@ -7,8 +7,8 @@ import LinkedinIcon from "~/assets/icons/linkedin.svg?component";
 
 <template>
   <div class="flex-col items-center text-center md:text-left">
-    <h3 class="mt-2 text-3xl">Lets connect</h3>
-    <ul class="my-5 flex gap-2">
+    <h3 class="mt-2 text-2xl md:text-3xl">Lets connect</h3>
+    <ul class="my-5 flex justify-center gap-2">
       <li>
         <CoreButton type="icon" size="sm" href="#">
           <TwitterIcon class="block h-6 w-6" />

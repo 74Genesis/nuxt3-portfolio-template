@@ -23,7 +23,7 @@ defineProps({
     role="listitem"
     class="text-md flex flex-col rounded-lg bg-gray-dark-blue p-10 font-extralight"
   >
-    <h2 class="text-3xl font-medium">{{ item.title }}</h2>
+    <h2 class="text-2xl font-medium md:text-3xl">{{ item.title }}</h2>
     <p class="mt-6 grow leading-7">{{ item.text }}</p>
     <div class="mt-12 flex items-center justify-between">
       <ul class="flex">

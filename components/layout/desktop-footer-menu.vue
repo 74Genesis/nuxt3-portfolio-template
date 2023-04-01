@@ -2,25 +2,22 @@
 <script lang="ts" setup>
 // @ts-ignore
 import { onMounted, ref } from "#imports";
+import Routes from "~/config/routes.js";
 
 const menuitem = ref<Element[]>([]);
-
-const menu = [
-  { title: "Home", href: "#home" },
-  { title: "Projects", href: "#projects" },
-  { title: "Code snippets", href: "#code" },
-  { title: "Mentorship", href: "#mentorship" },
-  { title: "Blog", href: "#blog" },
-];
 
 onMounted(() => {});
 </script>
 
 <template>
   <nav aria-label="Main menu desktop">
-    <ul class="flex" role="menubar" aria-label="Main menu desktop">
+    <ul
+      class="flex flex-col items-center md:flex-row md:items-start"
+      role="menubar"
+      aria-label="Main menu desktop"
+    >
       <li
-        v-for="item in menu"
+        v-for="item in Routes"
         :key="item.href"
         ref="menuitem"
         role="none"

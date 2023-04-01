@@ -2,7 +2,7 @@
 import { useHeadSafe } from "#imports";
 useHeadSafe({
   bodyAttrs: {
-    class: "bg-gray-dark",
+    class: "bg-gray-dark overflow-auto h-screen",
   },
 });
 </script>

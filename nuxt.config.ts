@@ -15,7 +15,10 @@ export default defineNuxtConfig({
     plugins: [
       svgLoader()
     ]
-  }
+  },
+  router: {
+    scrollBehavior: () => ({ x: 0, y: 0 }),
+  },
   // plugins: [
   //   { src: "https://esm.sh/webtorrent", mode: "client" }, // only on client side
   // ],

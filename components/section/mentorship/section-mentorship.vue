@@ -27,13 +27,15 @@ const list = [
 
 <template>
   <section class="section-basic">
-    <div class="flex">
-      <div class="mr-24">
-        <h2 class="text-4xl">Developer Mentorship</h2>
-        <ManIcon class="-ml-3 w-80" aria-hidden="true" />
+    <div class="flex flex-col md:flex-row">
+      <div class="m-0 text-center md:mr-24 md:text-left">
+        <h2 class="text-3xl md:text-4xl">Developer Mentorship</h2>
+        <ManIcon class="m-auto w-80 md:-ml-3" aria-hidden="true" />
       </div>
       <div class="">
-        <ul class="flex flex-col gap-7 text-sm font-light text-dark-font">
+        <ul
+          class="flex flex-col gap-7 pl-8 text-sm font-light text-dark-font md:p-0"
+        >
           <li
             v-for="item in list"
             :key="item.title"

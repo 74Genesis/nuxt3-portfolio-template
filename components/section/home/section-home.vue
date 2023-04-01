@@ -8,11 +8,11 @@
       Hi, Im a Software Developer, a special human with some ability to love
       learning and working on teamwork.
     </h1>
-    <div class="mt-20 flex flex-col gap-20 md:flex-row">
-      <SectionHomeAbout class="order-2 max-w-2xl md:order-1" />
-      <SectionHomeContacts class="order-1 md:order-2" />
+    <div class="mt-10 flex flex-col gap-7 md:mt-20 md:flex-row md:gap-20">
+      <SectionHomeAbout class="max-w-2xl" />
+      <SectionHomeContacts />
     </div>
-    <div class="mt-20 flex gap-20">
+    <div class="mt-1 flex flex-col gap-20 md:mt-20 md:gap-20 lg:flex-row">
       <SectionHomeExperience />
       <SectionHomeServices />
     </div>

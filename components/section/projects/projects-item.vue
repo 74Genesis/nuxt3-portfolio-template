@@ -19,7 +19,7 @@ defineProps({
 </script>
 
 <template>
-  <div role="listitem" class="mb-10 flex gap-7">
+  <div role="listitem" class="mb-10 flex flex-col gap-3 md:flex-row md:gap-7">
     <a href="#project" class="relative shrink-0 grow-0 basis-6/12">
       <img
         :src="item?.img"
@@ -34,8 +34,8 @@ defineProps({
     </a>
     <div>
       <div class="mt-5 font-light text-white/60">{{ item?.category }}</div>
-      <h2 class="mt-5 text-4xl">{{ item?.title }}</h2>
-      <p class="mt-8 font-extralight leading-8">{{ item?.text }}</p>
+      <h2 class="mt-5 text-2xl md:text-4xl">{{ item?.title }}</h2>
+      <p class="mt-4 font-extralight leading-8 md:mt-8">{{ item?.text }}</p>
     </div>
   </div>
 </template>

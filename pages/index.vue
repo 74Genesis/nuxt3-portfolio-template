@@ -1,5 +1,11 @@
 <script lang="ts" setup>
-import { definePageMeta } from "#imports";
+import { definePageMeta, onMounted, useNuxtApp } from "#imports";
+const nuxtApp = useNuxtApp();
+
+onMounted(() => {
+  nuxtApp.$routing.init();
+});
+
 definePageMeta({
   layout: false,
 });
@@ -8,16 +14,17 @@ definePageMeta({
   <div>
     <NuxtLayout name="default">
       <template #header>
-        <LayoutHeader />
+        <LayoutHeader class="hidden md:flex" />
       </template>
       <template #default>
-        <SectionHome class="mb-28" />
-        <SectionProjects class="mb-24" />
-        <SectionSnippets class="mb-24" />
-        <SectionMentorship class="mb-24" />
+        <LayoutMobileMenu class="visible md:hidden" />
+        <SectionHome id="home" class="mb-16 md:mb-28" />
+        <SectionProjects id="projects" class="mb-16 md:mb-24" />
+        <SectionSnippets id="code" class="mb-16 md:mb-24" />
+        <SectionMentorship id="mentorship" class="mb-16 md:mb-24" />
       </template>
       <template #footer>
-        <LayoutFooter />
+        <LayoutFooter class="mb-20 md:mb-0" />
       </template>
     </NuxtLayout>
   </div>
