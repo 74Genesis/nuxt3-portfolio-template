@@ -1,5 +1,7 @@
 ## Deploy
 
+https://74genesis.github.io/nuxt3-portfolio-template/
+
 Make sure to install the dependencies:
 
 ```bash
