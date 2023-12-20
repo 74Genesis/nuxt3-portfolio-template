@@ -1,8 +1,8 @@
 Simple responsive HTML markup, `Nuxt 3`, `Tailwind`, `w3 Accessibility`;
 
-### GH Pages: https://74genesis.github.io/nuxt3-portfolio-template/
+#### GH Pages: https://74genesis.github.io/nuxt3-portfolio-template/
 
-<img width="1312" alt="Screen Shot 2023-12-20 at 15 35 31" src="https://github.com/74Genesis/nuxt3-portfolio-template/assets/8638559/cd3e86db-3e53-4679-a326-fac37462f032">
+<img width="874" alt="Screen Shot 2023-12-20 at 15 38 46" src="https://github.com/74Genesis/nuxt3-portfolio-template/assets/8638559/95b14c09-1f25-49a7-81d0-310cf87ef3d3">
 
 
 ## Deploy
